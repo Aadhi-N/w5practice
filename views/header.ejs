@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<ul>
+ 	
+ 		<% taskDatabase.forEach(function(task) { %>
+ 		<li>Task <%= task.id %> - <%= task.task %>
+ 		<form action="tasks/:id/delete" method=POST><button>Delete</button>
+ 	 	</form>	
+ 		</li>
+ 	 	<% }); %>
+
+ 	</ul>
+
+</body>
+</html>
+
